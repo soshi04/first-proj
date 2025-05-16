@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import disp from './comp1.tsx'
 
 /**
  * This defines our React functional component called App.
