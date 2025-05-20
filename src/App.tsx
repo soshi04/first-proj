@@ -5,6 +5,17 @@ import './App.css'
  * This defines our React functional component called App.
  * React components are functions that !! return JSX !! (the stuff that renders on the page).
  */
+function MyButton(){
+  return(
+    <button>click</button>
+  )
+}
+
+function MyOtherButton(){
+  return (
+    <button>other one</button>
+  )
+}
 function App() {
   let count: number = 4;
   let active: boolean = true;
@@ -56,6 +67,12 @@ function App() {
     onKeyDown={pressedEnter}
     placeholder='type name'
     />
+    {
+      name == "sohum" ? (
+        <MyButton/>
+      ) : (
+        <MyOtherButton/>
+      )}
 
   </div>
   );
