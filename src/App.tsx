@@ -3,6 +3,7 @@ import { useState } from 'react'
 import './App.css'
 import PicTest from './pages/PicTest'
 import MainPage from './pages/MainPage'
+import TestingPage from './pages/TestingPage'
 
 /**
  * This defines our React functional component called App.
@@ -24,6 +25,7 @@ function App() {
     <Routes>
     <Route path="/" element={<MainPage />} />
     <Route path="/PicTest" element={<PicTest />} />
+    <Route path="/TestingPage" element={<TestingPage/>}/>
   </Routes>
   )
 }

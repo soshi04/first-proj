@@ -1,6 +1,6 @@
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-
+import './MainPage.css'
 
 /**
  * This defines our React functional component called MainPage.
@@ -49,7 +49,11 @@ function MainPage() {
   <div className="App">
     <h1>{currentValue()}</h1>
     <div>
-    <button onClick={handleClick}>Cycle</button>
+      <div>
+        <button className='buttons-cont' onClick={handleClick}>Cycle</button>
+        <button onClick={() => navigate('/PicTest')}>Go to picstest</button>
+        <button onClick={() => navigate('/TestingPage')}>Go to tests</button>
+      </div>
     <input 
     type="text"
     value={tempName}
@@ -58,10 +62,11 @@ function MainPage() {
     placeholder='type name'
     />
     </div>
-    <button onClick={() => navigate('/PicTest')}>Go to picstest</button>
-
+    <h1>{count}</h1>
   </div>
   );
 }
-
+/* you need to give button containers
+ their own classname for them to use css
+  like in line 53*/
 export default MainPage

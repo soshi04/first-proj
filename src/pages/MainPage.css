@@ -1,0 +1,22 @@
+.buttons-cont{
+    font-size: medium;
+    border-radius: 8px;
+    color: aqua;
+    text-emphasis-color: aqua;
+    height: 50px;
+    padding: 10px 20px; 
+    cursor: crosshair;
+}
+
+/*
+button {
+  padding: 10px 20px;        inner spacing
+  font-size: 16px;           text size 
+  font-weight: bold;          text weight 
+  color: white;               text color 
+  background-color: blue;     background 
+  border: none;              /* remove default border 
+  border-radius: 8px;        /* rounded corners 
+  cursor: pointer;           /* pointer on hover 
+  */
+
