@@ -1,4 +1,7 @@
 import { useNavigate } from 'react-router-dom'
+import Board from '../components/Board'
+import '../components/tiktaktoe.css'
+
 
 function TestingPage(){
     const navigate = useNavigate()
@@ -26,9 +29,9 @@ function TestingPage(){
             <h1>hello tests</h1>
             <button onClick={() => navigate('/')} > back to main
             </button>
+            <ul>{listCoffee}</ul>
             <div>
-                <ul>{listCoffee}</ul>
-
+                <Board/>
             </div>
         </div>
     );
